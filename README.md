@@ -1,4 +1,4 @@
-# Charlas de Divulgacion Astronómica
+# Charlas de Divulgación Astronómica
 
 Aqui se puede acceder a las filminas presentadas y, en caso de estar disponibles,
 los enlaces a los videos.
