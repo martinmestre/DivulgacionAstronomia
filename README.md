@@ -21,3 +21,5 @@ Fecha: 15/12/2023.
 [42 stellar streams around the MW](https://www.youtube.com/watch?v=Pa_zS5-WuBg&t=11s)
 
 [Sagittarius passage and stream](https://www.youtube.com/watch?v=D7HrMLbJ-2w)
+
+[Gaia-Enceladus simulation](https://www.youtube.com/watch?v=8T2EdRZ_iE4)
