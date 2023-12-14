@@ -25,7 +25,7 @@ Fecha: 15/12/2023.
 [Global Dynamical Atlas of the MW mergers (Malhan et al 2022)](https://www.youtube.com/watch?v=7WZ8-XjizEE&t=165s)
 
 
-#### Enlaces a videos no utilizados en la charla:
+#### Otros enlaces no relacionados:
 
 [Sagittarius passage and stream](https://www.youtube.com/watch?v=D7HrMLbJ-2w)
 
