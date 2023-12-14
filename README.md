@@ -20,12 +20,13 @@ Fecha: 15/12/2023.
 
 [Formation of Sagittarius stream in the presence of LMC](https://www.youtube.com/watch?v=dy_9GGMIXkU)
 
-[Global Dynamical Atlas of the MW mergers (Malhan et al 2022)](https://www.youtube.com/watch?v=7WZ8-XjizEE&t=165s)
-
 [42 stellar streams around the MW](https://www.youtube.com/watch?v=Pa_zS5-WuBg&t=11s)
 
-[Gaia-Enceladus simulation](https://www.youtube.com/watch?v=8T2EdRZ_iE4)
+[Global Dynamical Atlas of the MW mergers (Malhan et al 2022)](https://www.youtube.com/watch?v=7WZ8-XjizEE&t=165s)
+
 
 #### Enlaces a videos no utilizados en la charla:
 
 [Sagittarius passage and stream](https://www.youtube.com/watch?v=D7HrMLbJ-2w)
+
+[Gaia-Enceladus simulation](https://www.youtube.com/watch?v=8T2EdRZ_iE4)
