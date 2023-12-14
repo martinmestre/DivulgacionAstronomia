@@ -1,0 +1,660 @@
+%\documentclass[mathserif,9pt]{beamer}
+\documentclass[mathserif,100pt]{beamer}
+
+%\usepackage{beamerthemesplit}
+\usepackage{graphicx}
+%\usetheme{JuanLesPins}
+%\documentclass{beamer}
+\usepackage{multimedia}
+%\usepackage{media9}
+\usepackage{bm}
+
+
+\usetheme{lankton-keynote}
+
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bes{\begin{equation*}}
+\def\ees{\end{equation*}}
+\def\ba{\begin{eqnarray}}
+\def\ea{\end{eqnarray}}
+\def\bas{\begin{eqnarray*}}
+\def\eas{\end{eqnarray*}}
+\def\bi{\begin{itemize}}
+\def\ei{\end{itemize}}
+\def\bc{\begin{columns}}
+\def\ecx{\end{columns}}
+\def\bm{\begin{minipage}}
+\def\em{\end{minipage}}
+
+% For arrows:
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes}
+\everymath{\displaystyle}
+
+% For transparent box
+\usepackage{transparent}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+%\usepackage[left=1cm, right=1cm, bottom=1cm, top=1cm]{geometry}
+%\addtolength{\topmargin}{1pt}
+%\addtolength{\headsep}{5pt}
+%\addtolength{\oddsidemargin}{-4pt}
+%\addtolength{\marginparwidth}{20pt}
+%\addtolength{\marginparsep}{-3pt}
+%\addtolength{\textwidth}{-5pt}
+
+%\newcommand{\overgang}{\transdissolve}
+\newcommand{\overgang}{}
+
+\newcommand*{\thead}[1]{\multicolumn{1}{c}{#1}}
+
+\usepackage{amsmath}
+% textpos stuff
+\usepackage[absolute]{textpos}
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{10mm}{10mm} % start everything near the top-left corner
+\setlength{\parindent}{0pt}
+
+% German stuff
+%\usepackage[german]{babel}
+\usepackage[T1]{fontenc}
+%\usepackage[latin1]{inputenc}
+
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+%\usepackage{ngerman} % which should have the same result as \usepackage[ngerman]{babel}
+
+%\useinnertheme{default}
+%\useoutertheme{smoothbars}
+% Puts think up and down.
+%\usetheme{shadow}
+%\useoutertheme{default}
+
+%\usecolortheme[rgb={1.,0.,0.}]{structure} % red
+%\usecolortheme[rgb={0.,0.,.54}]{structure} % navy blue
+%\usecolortheme[rgb={0.25,0.41,.88}]{structure} % royal blue
+%\usecolortheme[rgb={0.,0.,.8}]{structure} % deep blue
+%\usecolortheme[rgb={0.69,0.13,.13}]{structure} % deep blue
+\usecolortheme[rgb={0.,0.8,0.4}]{structure} % deep blue
+
+\newcommand{\chg}[1]{\textcolor{magenta}{#1}}
+\newcommand{\fs}[1]{\textcolor{red}{[\textbf{FS:}~#1]}}
+\newcommand{\ab}[1]{\textcolor{red}{[\textbf{Alex:}~#1]}}
+\newcommand{\wah}[1]{\textcolor{orange}{[\textbf{Wojtek:}~#1]}}
+
+\newcommand{\tcg}{\textcolor{green}}
+\newcommand{\tcr}{\textcolor{red}}
+\definecolor{mygreen}{rgb}{0, 0.8, 0.4}
+\definecolor{mycyan}{rgb}{0.8, 0.3, 0.}
+%\setbeamercovered{dynamic}
+
+%\usecolortheme{sidebartab}
+%\usecolortheme{crane}
+%\usecolortheme{rose}
+
+% For smooth transitions:
+%\usepackage{animate}
+%\usepackage{tikz}
+%\usetikzlibrary{decorations.markings}
+%\newcounter{angle}
+%\setcounter{angle}{0}
+
+
+%====================================
+% For movie
+\usepackage{multimedia}
+
+\setbeamercolor{background canvas}{bg=black}
+\setbeamercolor{normal text}{fg=yellow}
+\setbeamercolor{frametitle}{fg=mygreen}
+%====================================
+\setbeamertemplate{navigation symbols}{} %no nav symbols
+\setbeamertemplate{background}
+{
+    \includegraphics[width=\paperwidth,height=\paperheight]{figures/background.jpg}
+}
+\title[]{{\huge CORRIENTE ESTELARES}\\ {\LARGE Aquellos r\'ios de estrellas en la Galaxia y el Universo local}}
+\author[]{{\bf {\scriptsize Mart\'in Federico Mestre}}}
+
+\institute{
+  Instituto de Astrof\'isica de La Plata, CONICET-UNLP, Argentina \\
+  Facultad de Ciencias Astron\'omicas y Geof\'isicas de La Plata, UNLP, Argentina\\
+  \begin{center}
+    \includegraphics[width=0.12\textwidth]{logos/logo_ialp_small.jpg}
+    \hspace{1mm} \includegraphics[width=0.19\textwidth]{logos/fcaglp.jpg}
+    \hspace{1mm} \includegraphics[width=0.18\textwidth]{logos/dots.jpg}
+  \end{center}
+}
+\date[]{La Charla de los Viernes en el Planetario UNLP}
+
+
+
+
+\begin{document}
+\frame{\titlepage}
+
+\frame {\frametitle{DOTS members}\overgang
+\begin{columns}
+  \begin{column}{0.3\textwidth}
+    \vspace{5mm}\\
+      \includegraphics[width=0.7\textwidth,angle=0]{fotos/Charly.jpg}\\
+      {\scriptsize Carlos Argüelles}\\
+      \vspace{5mm}
+      \includegraphics[width=0.8\textwidth,angle=0]{fotos/Mariano.jpg}\\
+      {\scriptsize Mariano Dom\'inguez}\\
+  \end{column}
+  \hfill
+  \begin{column}{0.3\textwidth}
+      \vspace{2mm}\\
+      \includegraphics[width=0.9\textwidth,angle=180]{fotos/Daniel.jpg}\\
+      {\scriptsize Daniel Carpintero}\\
+      \vspace{1cm}
+      \includegraphics[width=0.7\textwidth,angle=0]{fotos/Nico.jpg}\\
+      {\scriptsize Nicol\'as Maffione}\\
+  \end{column}
+  \hfill
+  \begin{column}{0.3\textwidth}
+    \includegraphics[width=0.8\textwidth,angle=0]{fotos/Santi.jpg}\\
+    {\scriptsize Santiago Collazo}\\
+    \vspace{1cm}
+    \includegraphics[width=0.8\textwidth,angle=0]{fotos/Martin.jpg}\\
+    {\scriptsize Mart\'in Mestre}\\
+  \end{column}
+\end{columns}
+}
+
+\frame {\frametitle{Modelo simplificado de la Galaxia}\overgang
+
+    \begin{center}
+      \includegraphics[width=0.9\textwidth]{figures_viernes/simpleGalaxy.jpg}\\
+    \end{center}
+}
+\frame {\frametitle{La Galaxia posee además otras subestructuras}\overgang
+
+    \begin{center}
+      \includegraphics[width=0.9\textwidth]{figures_viernes/HaloSubstructureMW.pdf}\\
+    \end{center}
+}
+\frame {\frametitle{La Galaxia posee además otras subestructuras}\overgang
+
+\begin{center}
+  \includegraphics[width=0.6\textwidth]{figures_viernes/SnapshotSimulationStreams.jpg}\\
+  {\small Consistente con un Universo jerárquico formado por sucesivas fusiones de galaxias}
+\end{center}
+}
+
+\frame {\frametitle{Simulación de corriente estelar}\overgang
+
+\begin{center}
+  Animación: \textcolor{orange}{GlobularClusterStreamInMWwithSubHalos.mp4} \\
+\end{center}
+}
+
+\frame {\frametitle{Qué es una corriente estelar?}\overgang
+  \begin{minipage}{1.0\textwidth}
+  {\small Es el sistema que se forma cuando un sistema auto-gravitante de estrellas (cúmulo
+  globular o galaxia enana) es desarmada por las fuerzas gravitatorias de marea  producidas por la galaxia
+  anfitriona.\\
+  Generalmente un par de brazos de marea son formados, uno que va hacia adelante y otro hacia atras del progenitor.
+ }
+  \end{minipage}
+  \vfill
+  \begin{columns}
+    \begin{column}{0.6\textwidth}
+      \begin{center}
+        \includegraphics[width=0.9\textwidth]{figures/stream_drawing.pdf}
+      \end{center}
+    \end{column}
+  \end{columns}
+}
+
+\frame {\frametitle{El radio de marea}\overgang
+
+  \begin{columns}
+    \begin{column}{0.45\textwidth}
+      \begin{center}
+        \includegraphics[width=0.9\textwidth]{figures/stream_drawing.pdf}\\
+        \vspace{5mm}
+        Para órbitas circulares en un potencial con simetría esférica:
+        \begin{equation}
+         r_t \approx \left(\frac{Gm}{\Omega^2-\frac{\partial^2\Phi}{\partial R^2}}\right)^{1/3} \nonumber
+        \end{equation}
+      \end{center}
+    \end{column}
+  \hfill
+    \begin{column}{0.45\textwidth}
+      \begin{center}
+        \includegraphics[width=0.9\textwidth]{figures/fig_pe.pdf}\\
+      \end{center}
+    \end{column}
+  \end{columns}
+}
+
+\frame {\frametitle{Arcturus stream}\overgang
+
+    \begin{center}
+      \includegraphics[width=0.9\textwidth]{figures_viernes/ArcturusGroup.pdf}\\
+    \end{center}
+}
+\frame {\frametitle{Arcturus stream}\overgang
+
+    \begin{center}
+      \includegraphics[width=0.4\textwidth]{figures_viernes/ArcturusGroupPlot.eps}\\
+    \end{center}
+}
+\frame {\frametitle{Stellar streams in the Local Universe}\overgang
+%\hspace{-1cm}
+  \begin{minipage}[t]{\textwidth}
+    \begin{center}
+      \includegraphics[width=1.0\textwidth]{figures_gd1/martinez-delgado_fig2.jpg}    \end{center}
+  \end{minipage}
+    {\tiny Mart{\'i}nez-Delgado D. et al. 2018}
+
+}
+
+\frame {\frametitle{Stellar streams in the Milky Way (Origins)}\overgang
+  \begin{minipage}[t]{1.0\textwidth}
+    \begin{center}
+      \includegraphics[width=1\textwidth]{figures_gd1/fos_dr6_marked.jpg}
+    \end{center}
+  \end{minipage}
+
+{\tiny Belokurov V. et al. 2006}
+}
+
+\frame {\frametitle{Stellar streams in the Galaxy\\
+  {\normalsize Atlas of the Milky Way Mergers (Malhan et al. 2022)}}\overgang
+  \begin{minipage}[t]{1.0\textwidth}
+    \begin{center}
+      41 stellar streams comprising 9192 Gaia EDR3 stars\\
+      \vspace{0.5cm}
+      \includegraphics[width=0.8\textwidth]{figures_gd1/atlas.png}
+    \end{center}
+  \end{minipage}
+}
+
+\frame {\frametitle{Stellar streams in the Galaxy\\
+  {\normalsize Galstreams Python Package (Cecilia Mateu 2022) }}\overgang
+  \begin{minipage}[t]{1.0\textwidth}
+    \begin{center}
+      95 stellar stream 5D/6D tracks available in Galstreams\\
+      \vspace{0.5cm}
+      \includegraphics[width=0.8\textwidth]{figures/fig_all_streams_lib.png}
+    \end{center}
+  \end{minipage}
+}
+
+\frame { \frametitle{Stellar streams in the Computer}\overgang
+  \begin{minipage}{0.45\textwidth}
+    {\scriptsize
+      Tidal features:
+      \begin{itemize}
+      \item Great circles
+      \item Plumes
+      \item Shells
+      \item Umbrellas
+      \item Spikes
+      \item Giant clouds
+      \end{itemize}
+    }
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.49\textwidth}
+    \includegraphics[width=1\textwidth]{figures_gd1/Fig2_martinez.pdf}
+
+    {\tiny Mart{\'i}nez-Delgado D. et al. 2010, Johnston et al. 2008}
+  \end{minipage}
+  \vfill
+  \begin{minipage}{0.45\textwidth}
+    \includegraphics[width=1\textwidth]{figures_gd1/martinez-delgado_fig1.jpg}
+
+    {\tiny Martinez-Delgado D. 2018}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.45\textwidth}
+    {\scriptsize  Expected streams around a Milky Way--like galaxy
+      for different surface brightness detection
+      limits (mag/arcsec$^2$):
+      \begin{itemize}
+      \item $\mu_{\rm{A}}=31$
+      \item $\mu_{\rm{B}}=25$
+      \item $\mu_{\rm{C}}=28$
+      \end{itemize}
+    }
+  \end{minipage}
+}
+
+\frame {\frametitle{Palomar 5 stream\\
+\vspace{-0.3cm}
+  {\tiny (Odenkirchen 2000+)}}\overgang
+  \begin{minipage}[t]{1.0\textwidth}
+    \begin{center}
+      \textcolor{cyan}{A stellar stream that probes the halo and the bar}\\
+      \vspace{0.2cm}
+      \includegraphics[width=0.45\textwidth]{figures/odenkirchen_fig1.pdf}\hfill
+      \hspace{1mm}
+      \includegraphics[width=0.45\textwidth]{figures/odenkirchen_fig2.pdf}\\
+      \vspace{2mm}
+      $d_{CG} \approx 16$ kpc\\
+      $d_\odot \approx 20$ kpc\\
+      length $\approx 20^\circ$ / 7 kpc\\
+      width $\approx 120$ pc\\
+
+    \end{center}
+  \end{minipage}
+}
+
+\frame {\frametitle{Group projects}\overgang
+\begin{itemize}[<+->]
+
+\item Influence of chaos on stream evolution (published)
+\item GD-1 stream on a MW with fermionic DM halo (to be submitted)
+\item Sagittarius stream on a MW with fermionic DM halo (to be submitted)
+\item Applications of fermionic DM code to other astrophysical phenomenae (to be submitted)
+\end{itemize}
+}
+
+\frame {\frametitle{The GD-1 stellar stream\\
+\vspace{-0.3cm}
+  {\tiny (Grillmair \& Dionatos 2006)}}\overgang
+  \begin{minipage}[t]{1.0\textwidth}
+    \begin{center}
+      \textcolor{cyan}{A cold stream traveling through the halo, \\
+      shown in self coordinates $\phi_1, \phi_2$}\\
+      {\tiny (Price-Whelan \& Bonaca 2018)}\\
+      \vspace{0.2cm}
+      \includegraphics[width=0.8\textwidth]{figures_gd1/GD-1_PriceW-Bonaca2018.jpg}\\
+      \vspace{2mm}
+      {\scriptsize $d_\odot\approx$ 10 kpc \\
+      length $\approx 100^\circ$ / 10 kpc\\
+       width $\approx 12^\circ$ / 30 pc}
+    \end{center}
+  \end{minipage}
+}
+
+\frame {\frametitle{The GD-1 stellar stream\\
+\vspace{-0.3cm}
+  {\tiny (Grillmair \& Dionatos 2006)}}\overgang
+  \begin{minipage}[t]{1.0\textwidth}
+    \begin{center}
+      \textcolor{cyan}{A cold stream traveling through the halo, \\
+      shown in self coordinates $\phi_1, \phi_2$}\\
+      {\tiny (Price-Whelan \& Bonaca 2018)}\\
+      \vspace{0.2cm}
+      \includegraphics[width=0.8\textwidth]{figures_gd1/GD-1_PriceW-Bonaca2018.jpg}\\
+      to study a \\
+      \textcolor{brown}{System of Self-Gravitating Fermions}\\
+      that satisfy a\\
+      \textcolor{green}{Maximum Entropy Production Principle} (the RFK/RAR model)
+    \end{center}
+  \end{minipage}
+}
+\frame { \frametitle{Previus motivations}\overgang
+  \begin{minipage}{0.9\textwidth}
+    \begin{center}
+      {\scriptsize GD-1 fit to MWPotential2014 with \textcolor{yellow}{axisymmetric} NFW (Malhan et al. 2019).}
+      \includegraphics[width=1.0\textwidth]{figures_gd1/MalhanFitGD-1.png}
+    \end{center}
+  \end{minipage}
+  \vfill
+  \pause
+  \begin{minipage}{0.49\textwidth}
+    \begin{center}
+      \includegraphics[width=1\textwidth]{figures_gd1/rotation_curves_data.png}
+    \end{center}
+  \end{minipage}
+  \begin{minipage}{0.49\textwidth}
+    {\scriptsize RFK model for MW relies on rotation curves.
+    Rotation curves depend on the assumption on \textcolor{yellow}{$V_{\mathrm{LSR}}$}.\\
+    \textcolor{orange}{Streams probe the acceleration field.}}
+  \end{minipage}
+}
+
+\frame { \frametitle{The relativistic fermionic King model}\overgang
+  \begin{minipage}{0.9\textwidth}
+    \begin{center}
+     {\scriptsize We solve Einstein equations for a gas of fermions at finite T in hydrostatic equilibrium
+     (i.e. T.O.V), in spherical symmetry Argüelles, Krut, Rueda, Ruffini (2018).}\\
+
+    {\scriptsize
+    \begin{equation}
+      \frac{d\nu}{d\zeta}=\frac{1}{2}\left[e^{z}+e^{2\zeta}\frac{P(r)}{\rho_{rel}c^2}\right][1-e^{z}]^{-1}
+    \end{equation}
+    }
+    {\scriptsize
+    \begin{equation}
+      \frac{dz}{d\zeta}=-1+e^{(2\zeta-z)}\frac{\rho(r)}{\rho_{rel}}
+    \end{equation}
+    }
+    {\scriptsize $\zeta=\ln(r/R)$,  $z=\ln\left(\frac{M(r)}{M}\frac{R}{r}\right)$}\\
+    {\scriptsize
+    \begin{equation}
+      \rho(r)=\frac{4\rho_{\rm rel}}{\sqrt{\pi}}\int^\infty_1\epsilon^2[\epsilon^2-1]^{1/2}f(r,\epsilon)d\epsilon
+    \end{equation}
+    \begin{equation}
+      P(r)=\frac{4\rho_{\rm rel}c^2}{3\sqrt{\pi}}\int^\infty_1[\epsilon^2-1]^{3/2}f(r,\epsilon)d\epsilon
+    \end{equation}
+    }
+
+
+  \end{center}
+\end{minipage}
+
+}
+\frame { \frametitle{The RFK model}\overgang
+  \begin{minipage}{0.9\textwidth}
+    \begin{center}
+  Maximum Entropy production Priniciple: Chavanis, MNRAS (1998)
+      \begin{equation}
+        f(r,\epsilon)=
+        \begin{cases}
+          \frac{1-e^{[\epsilon-\epsilon_c(r)]/\beta(r)}}
+          {1+e^{[\epsilon-\alpha(r)]/\beta(r)}}\quad \epsilon \leq \epsilon_c(r)\\
+          0\quad \epsilon > \epsilon_c(r)
+        \end{cases}
+      \end{equation}
+
+      Klein, Tolman and energy conservation equations imply:
+  \begin{equation}
+    \alpha(r)=\alpha_0 e^{-(\nu-\nu_0)},\qquad  \beta(r)=\beta_0 e^{-(\nu-\nu_0)},\qquad  \epsilon_c(r)=\epsilon_0 e^{-(\nu-\nu_0)}.
+  \end{equation}
+
+    4 RFK parameters:\\
+    $m$,\quad $\beta_0=kT_0/mc^2$,\\
+    $\theta_0=(\alpha_0-1)/\beta_0$,\quad $W_0=(\epsilon_{c0}-1)/\beta_0$
+    \end{center}
+  \end{minipage}
+
+}
+
+\frame {\frametitle{A single objective}\overgang
+
+\textcolor{green}{Fit the fermionic model according to a few observables (next slide)}.\\
+\vspace{0.5cm}
+
+
+To begin with we have the following full stream model:
+{\scriptsize
+  \begin{itemize}[<+->]
+    \item Stream(17) = Potential(12) + Orbit\_IC(5).
+    \item Potential(12) = Baryons(8) + DM(4).
+    \item Baryons(8) = Plummer\_Bulge(2) + 2$\times$ MiyamotoNagai\_Disk(3).
+  \end{itemize}
+}
+\pause
+But there is some \textcolor{cyan}{a priori knowledge}:
+{\scriptsize
+      \begin{itemize}[<+->]
+        \item Fits to the orbits of Sagittarius A$^*$-stars imply\\
+          \boldsymbol{\textcolor{cyan}{$m_f\geq 56$ keV $\&$ Core Mass $\approx 3.5\times10^6 M_\odot$}}
+          (Becerra-Vergara+21). \\
+          \boldsymbol{\textcolor{yellow}{We fixed $m_f=56$ keV}}
+        \item Fits to the \textcolor{cyan}{radial surface denstiy profiles} and
+          \textcolor{cyan}{vertical density profile at solar radius} determine
+          the \textcolor{yellow}{Baryonic parameters} (Pouliasis+17).
+      \end{itemize}
+}
+\pause
+Then we are left with:
+{\scriptsize
+  \begin{itemize}[<+->]
+    \item Stream(8) = RFK($\theta_0$, $W_0$, $\beta_0$) + Orbit\_IC(5)
+  \end{itemize}
+}
+}
+
+\frame { \frametitle{GD-1 Observables\\
+\vspace{-0.6cm}
+  {\tiny (Ibata+20)}}\overgang
+  \begin{minipage}{0.45\textwidth}
+    \includegraphics[width=1.0\textwidth]{figures_gd1/observables1_Ibata2020.jpg}\\
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.45\textwidth}
+    \includegraphics[width=1\textwidth]{figures_gd1/observables2_Ibata2020.jpg}
+  \end{minipage}
+  \vfill
+  \begin{minipage}{0.3\textwidth}
+    \includegraphics[width=1\textwidth]{figures_gd1/observables3_Ibata2020.jpg}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.65\textwidth}
+    {\tiny
+      \begin{itemize}[<+->]
+        \item STREAMFINDER (Gaia DR2): \textcolor{cyan}{811 candidate members}.
+        \item Cross correlation with spectroscopy: \textcolor{pink}{156 stars in RV sample}.
+        \item Velocity fit: \textcolor{pink}{117 RV member stars}.
+        \item Sky coords fit (\textcolor{pink}{with 117 RV members}): $\phi_2 = S(\phi_1)$.
+        \item Final selection ($|\phi_2-S(\phi_1)|<0.6^\circ$ \& not RV outlier): \textcolor{cyan}{603 Gaia stars}.
+        \item STREAMFINDER $+$ Pan-STARRS $+$ stellar population models:
+          \textcolor{yellow}{Photometric Heliocentric Distance ($D_{\rm{hel}}$)}.
+        \item Distance fit (\textcolor{pink}{with 117 RV members}):\textcolor{yellow}{$D_{\rm{hel}}=D(\phi_1)$}.
+      \end{itemize}
+    }
+  \end{minipage}
+}
+
+\frame { \frametitle{Fitting procedure}\overgang
+  \begin{minipage}{1.0\textwidth}
+      \begin{itemize}[<+->]
+        \item Define a grid in the domain of Ibata Polynomials $\phi_1$.
+        \item $\chi^2_{\eta} = \frac{1}{\sigma_\eta^2}\sum_{i=1}^{100} \Big(\eta^{(i)}-\eta(\phi_1^{(i)})\Big)^2$
+        \item $\chi^2_{\rm{stream}} = \chi^2_{\phi_2} + \chi^2_{D}+ \chi^2_{\tilde{\mu}_\alpha}+ \chi^2_{\mu_\delta}+\chi^2_{v_h}$
+        \item Use the potential fitted by Malhan+19 to find the
+        best fit orbit and use its initial condition as an approximation to our problem.
+        \item Now we have a full model stream(3) = RFK($\theta_0$, $W_0$, $\beta_0$) \textcolor{cyan}{effectively}.
+        \item Pulish the orbit's initial condition for the RFK model.
+
+      \end{itemize}
+  \end{minipage}
+}
+
+\frame { \frametitle{Result of the fitting: stream features}\overgang
+  {\scriptsize Best fit parameters for 56 keV: \textcolor{green}{$\theta_0 = 36.07$}, \textcolor{green}{$W_0 = 63.41$}, \textcolor{green}{$\beta_0 = 1.26\times10^{-5}$}}
+  \begin{columns}
+    \begin{column}{0.49\textwidth}
+    \vspace{5mm}\\
+      \includegraphics[width=1.0\textwidth,angle=0]{figures/observables_position.pdf}\\
+      \vspace{5mm}
+      \includegraphics[width=1.0\textwidth,angle=0]{figures/observables_pmra.pdf}\\
+  \end{column}
+  \hfill
+    \begin{column}{0.49\textwidth}
+      \vspace{5mm}\\
+        \includegraphics[width=1.0\textwidth,angle=0]{figures/observables_pmdec.pdf}\\
+        \vspace{5mm}
+        \includegraphics[width=1.0\textwidth,angle=0]{figures/observables_helvel.pdf}\\
+    \end{column}
+ \end{columns}
+}
+
+\frame { \frametitle{Result of the fitting: stream features}\overgang
+  {\scriptsize Best fit parameters for 56 keV: \textcolor{green}{$\theta_0 = 36.07$}, \textcolor{green}{$W_0 = 63.41$}, \textcolor{green}{$\beta_0 = 1.26\times10^{-5}$}}
+  \begin{columns}
+    \begin{column}{0.49\textwidth}
+    \vspace{5mm}\\
+      \includegraphics[width=1.0\textwidth,angle=0]{figures/observables_position.pdf}\\
+      \vspace{5mm}
+      \includegraphics[width=1.0\textwidth,angle=0]{figures/observables_pmra.pdf}\\
+  \end{column}
+  \hfill
+    \begin{column}{0.49\textwidth}
+      \vspace{5mm}\\
+        \includegraphics[width=1.0\textwidth,angle=0]{figures/observables_pmdec.pdf}\\
+        \vspace{5mm}
+        \includegraphics[width=1.0\textwidth,angle=0]{figures/observables_heldist.pdf}\\
+    \end{column}
+ \end{columns}
+}
+
+\frame { \frametitle{Result of the fitting: rotation curve}\overgang
+ {\scriptsize Best fit parameters for 56 keV: \textcolor{green}{$\theta_0 = 36.07$}, \textcolor{green}{$W_0 = 63.41$}, \textcolor{green}{$\beta_0 = 1.26\times10^{-5}$}}
+  \begin{minipage}{0.9\textwidth}
+    \includegraphics[width=1\textwidth]{figures/rotation_curves.pdf}
+  \end{minipage}
+  \pause
+  \vfill
+  \begin{minipage}{0.8\textwidth}
+    Important halo features:\\
+    \textcolor{yellow}{
+    Radius = 28 kpc \hspace{2cm}
+    Mass = 1.4$\times$ 10$^{11}$ $M_\odot$}
+  \end{minipage}
+}
+
+\frame { \frametitle{Going to higher fermion masses to allow more compact cores}\overgang
+  \begin{minipage}{0.9\textwidth}
+    \includegraphics[width=1\textwidth]{figures/density_profiles.pdf}
+  \end{minipage}
+}
+
+
+\frame { \frametitle{Conclusion of the GD-1 project}\overgang
+\begin{minipage}{1.0\textwidth}
+  \begin{center}
+    \begin{itemize}[<+->]
+    \item It is possible to model de GD-1 stream using a
+    dark matter core-halo \textcolor{cyan}{spherical} distribution constituted by
+    self-gravitating fermions.
+    \item Stellar streams are good tracers of the \textcolor{cyan}{acceleration} field.
+    \end{itemize}
+  \end{center}
+\end{minipage}
+}
+
+\frame {\frametitle{Present and future projects}\overgang
+\begin{itemize}[<+->]
+\item GalacticDynamics.jl
+\item Multiple streams embedded in a MW with fermionic DM halo
+\item Acceleration field measurement independently of the MW DM model
+\item Community Atlas of Tidal Streams (\href{https://stellarstreams.org/streams22/}{\beamergotobutton{CATS}})
+\item Dark Energy Science Collaboration (DESC-LSST)
+\end{itemize}
+}
+
+\frame { \frametitle{¡Muchas gracias!}\overgang
+\begin{center}
+  \includegraphics[width=0.5\textwidth,angle=90]{logos/dots_Luisi.jpg}
+\end{center}
+\vfill
+\begin{minipage}{
+\textwidth}
+  \begin{center}
+    \includegraphics[width=0.25\textwidth]{logos/fcaglp}
+     \includegraphics[width=0.15\textwidth]{logos/logo_ialp_small.jpg}
+     \includegraphics[width=0.35\textwidth]{figures_gd1/ccad.png}
+     \includegraphics[width=0.2\textwidth]{logos/dirac.png}
+  \end{center}
+\end{minipage}
+}
+
+
+\end{document}
