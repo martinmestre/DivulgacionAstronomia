@@ -24,6 +24,7 @@ Fecha: 15/12/2023.
 
 [Global Dynamical Atlas of the MW mergers (Malhan et al 2022)](https://www.youtube.com/watch?v=7WZ8-XjizEE&t=165s)
 
+[Gallaxy collision for Planetarium (360 degrees)](https://www.youtube.com/watch?v=5BKHBeuZnjU)
 
 #### Otros enlaces relacionados:
 
