@@ -1,0 +1,42 @@
+Dynamics and Observations of Tidal Streams (DOTS...)
+
+Este joven grupo se conformó con el objetivo de estudiar
+diversos aspectos de las corrientes estelares, desde el punto de vista teórico
+y observacional.
+Cuando un satélite galáctico, que puede ser un cúmulo globular o bien una galaxia enana,
+orbita alrededor de su galaxia anfitriona, sufre los efectos gravitatorios
+de marea. Estas interacciones provocan la pérdida de estrellas desde zonas cercanas a los
+puntos de Lagrange L1 (interno) y L2 (externo) del sistema galaxia-satélite, las
+que terminan formando la corriente estelar.
+La misma esta constituida por dos brazos de marea llamados "leading" (a partir del punto L1), y
+"trailing" (a partir del punto L2).
+Por otro lado, dado que la autogravedad de las corrientes estelares se puede considerar
+despreciable, vuelve a las corrientes excelentes candidatos para estudiar los campos
+de aceleración de las galaxias anfitrionas.
+Por este motivo, las corrientes estelares se han convertido en importantes
+observables de la Vía Láctea en las últimas dos décadas.
+
+En este charla brindaremos una breve introducción al concepto de corriente estelar
+y mostraremos algunos ejemplos clásicos observados por la comunidad. Después de presentar
+a los miembros de DOTS, contaremos algunos proyectos en los que el grupo ha estado
+trabajando recientemente y aquellos en los que estamos iniciando nuevas líneas de investigación.
+Los proyectos son:
+- Influencia del caos en la evolución de corrientes estelares (publicado)
+- Modelado de la corriente estelar GD-1 utilizando materia oscura fermiónica (por enviarse)
+- Modelado de la corriente estelar Sagitario utilizando materia oscura fermiónica (por enviarse)
+- Escritura del código GalacticDynamics.jl (actual)
+- Modelado simultáneo de varias corrientes estelares utilizando materia oscura fermiónica (futuro)
+- Medición del campo de aceleración de la Galaxia de forma independiente de los modelos de materia
+  oscura y bariónica, utilizando las corrientes estelares en la base de datos Galstreams (futuro)
+- Participación en el Community Atlas of Tidal Streams (CATS) (actual)
+- Participación en la Dark Energy Science Collaboration (DESC-LSST) (futuro)
+- Aplicaciones del código de materia oscura fermiónica a problemas no relacionados con corrientes
+  estelares.
+
+El estudio de las corrientes estelares es multidisciplinario.
+Invitamos a todos a participar de la charla.
+
+¡Muchas gracias!
+
+DOTS...
+
