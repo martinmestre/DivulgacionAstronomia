@@ -13,6 +13,7 @@ Una corriente estelar es una consecuencia de las fuerzas gravitatorias de marea 
 En esta charla navegaremos algunos de los ríos y arroyos de estrellas de la Vía Láctea y alrededores. El estudio de las corrientes estelares comenzó con el descubrimiento de la corriente Arcturus (1971), seguido de la espectacular corriente de Sagitario (1994), que envuelve más de una vez a nuestra Galaxia.  Repasaremos el icónico “Field of streams” de Belokurov (2006) para llegar, en tiempos del telescopio espacial Gaia, a cerca de 100 corrientes estelares descubiertas en la Galaxia hasta el momento. Además se mostrarán ejemplos de corrientes extragalácticas así como implicaciones de las corrientes en el estudio del campo gravitatorio Galáctico y en la composición de la materia oscura.
 
 Fecha: 15/12/2023.
+Video disponible [aquí](https://www.youtube.com/watch?v=Bk4CUJ-VfT4).
 
 #### Enlaces a videos utilizados en la charla:
 
